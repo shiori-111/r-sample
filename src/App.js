@@ -1,13 +1,15 @@
 import React, { useState , useEffect } from 'react';
+import Timer from './Timer';
+import Clock from './Clock';
 
-const App = () => {
-  const [name, setName] = useState('World');
 
-  useEffect(() => {
-    console.log('test');
-  }, []);
-
-  return <h1>Hello {name}!</h1>;
+function App() {
+  return(
+    <div>
+      <Timer />
+      <Clock />
+    </div>
+  )
 };
 
 export default App;
